@@ -1,0 +1,26 @@
+.Header {
+  /* border: 1px solid #eee; */
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 30px auto;
+}
+.Header ul {
+  display: flex;
+  gap: 45px;
+}
+.Header ul > li {
+  list-style: none;
+}
+.mobile{
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+  .webTab {
+    display: none;
+  }
+  .mobile{
+    display: initial;
+  }
+  
+}

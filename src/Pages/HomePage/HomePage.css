@@ -1,0 +1,235 @@
+.Home {
+  /* border: 1px solid black; */
+}
+/* *{
+  border: 1px solid red;
+} */
+.DiplomaticGreen {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+.DiplomaticGreen img {
+  object-fit: cover;
+}
+.GreenInfoHead > p {
+  font-size: small;
+}
+.GreenInfoHead > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 50px;
+  letter-spacing: 6px;
+  text-align: left;
+  color: #000000;
+  margin: 0;
+}
+.descriptionGreenInfo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #000000;
+  width: 50%;
+  margin-left: auto;
+}
+.descriptionGreenInfo button {
+  border: 0;
+  background: transparent;
+  font-weight: 500;
+  margin: 10px 0;
+  text-decoration: underline;
+  /* border-bottom: 1px solid black; */
+}
+.DiplomaticGreen {
+  position: relative;
+}
+.slider {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(95, 93, 93);
+}
+.slider p,
+p > span {
+  margin: 0;
+}
+.line {
+  border: 1px solid rgb(152, 150, 150);
+  height: 2px;
+  width: 120px;
+  margin-top: 25px;
+}
+
+.Endeavour {
+  display: flex;
+  width: 95%;
+  margin: 120px 0 120px auto;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.EndeavourInfo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.EndeavourInfoCenter {
+  width: 50%;
+  margin: auto;
+  position: relative;
+}
+.EndeavourInfoCenter button {
+  border: 0;
+  background: transparent;
+  font-weight: 500;
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+.EndeavourImages p {
+  font-size: x-small;
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+}
+
+.slider2 {
+  position: absolute;
+  bottom: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(95, 93, 93);
+}
+
+.toprightAbout {
+  display: flex;
+  position: absolute;
+  color: #787474;
+  transform: rotate(270deg);
+  top: 30%;
+  left: -5%;
+  font-size: small;
+}
+.EndeavourImages {
+  position: relative;
+  right: 5%;
+}
+.overlayImg {
+  position: absolute;
+  top: 0;
+  right: calc(-100% - 5px);
+}
+
+.greyBox {
+  width: 100px;
+  height: 120px;
+  background: #8f9449;
+}
+.CompanyInfo {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.CompanyInfoImage {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.CompanyInfoImage img {
+  margin-right: 100px;
+  object-fit: cover;
+}
+.CompanyInfoDetails ul > li {
+  list-style: none;
+  width: 100px;
+}
+.CompanyInfoDetails ul > li > span {
+  font-size: small;
+  font-weight: bold;
+  color: rgb(120, 115, 115);
+}
+.SpecialGrey {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+  font-style: normal;
+  text-align: left;
+  color: #ad9957;
+}
+.CompanyInfoDetails {
+  display: flex;
+  align-items: end;
+}
+.CompanyInfoDetails ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+.ProjectsForSale {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1000px) {
+  .DiplomaticGreen {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .DiplomaticGreen {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 99%;
+  }
+  .DiplomaticGreen img {
+    width: 450px;
+  }
+  .toprightAbout {
+    top: -5px;
+    transform: rotate(0deg);
+  }
+
+  .descriptionGreenInfo {
+    width: 100%;
+  }
+  .EndeavourInfoCenter {
+    width: 100%;
+  }
+  .Endeavour {
+    flex-wrap: wrap;
+  }
+  .greyBox {
+    display: none;
+  }
+  .CompanyInfoImage img {
+    margin-right: 0;
+    margin-left: 30px;
+  }
+  .Images{
+    justify-content: end;
+  }
+}
