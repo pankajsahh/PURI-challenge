@@ -1,6 +1,6 @@
-.Home {
-  /* border: 1px solid black; */
-}
+/* .Home {
+  border: 1px solid black;
+} */
 /* *{
   border: 1px solid red;
 } */
@@ -12,6 +12,11 @@
 }
 .DiplomaticGreen img {
   object-fit: cover;
+  width: 500px;
+  height: 430px;
+}
+.DiplomaticGreenInfo {
+  padding: 40px;
 }
 .GreenInfoHead > p {
   font-size: small;
@@ -32,6 +37,7 @@
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
+
   text-align: left;
   color: #000000;
   width: 50%;
@@ -74,6 +80,7 @@ p > span {
   align-items: center;
   position: relative;
   overflow: hidden;
+  /* border: 1px solid #eee; */
 }
 .EndeavourInfo {
   width: 50%;
@@ -81,6 +88,7 @@ p > span {
   align-items: center;
   flex: 1;
 }
+
 .EndeavourInfoCenter {
   width: 50%;
   margin: auto;
@@ -122,11 +130,12 @@ p > span {
 .EndeavourImages {
   position: relative;
   right: 5%;
+  /* border: 1px solid #eee; */
 }
 .overlayImg {
   position: absolute;
   top: 0;
-  right: calc(-100% - 5px);
+  right: -55px;
 }
 
 .greyBox {
@@ -137,6 +146,7 @@ p > span {
 .CompanyInfo {
   /* border: 1px solid black; */
   display: flex;
+  background: url(http://puri.triverseadvertising.com/static/media/abt_bg_layer.7a9c7d5ad1f53ee83dad.png);
   justify-content: center;
   margin-bottom: 120px;
 }
@@ -154,7 +164,7 @@ p > span {
   list-style: none;
   width: 100px;
 }
-.CompanyInfoDetails ul > li > span {
+.CompanyInfoDetails ul > li > p {
   font-size: small;
   font-weight: bold;
   color: rgb(120, 115, 115);
@@ -171,7 +181,7 @@ p > span {
 }
 .CompanyInfoDetails {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
 }
 .CompanyInfoDetails ul {
   display: flex;
@@ -192,30 +202,112 @@ p > span {
   text-align: left;
   color: #000000;
 }
-
+.AnimateLeftToRight {
+  animation: movingLTR 3s;
+  position: relative;
+}
+@keyframes movingLTR {
+  from {
+    left: 100px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+.AnimateRightToLeft {
+  animation: movingRTL 3s;
+  position: relative;
+}
+@keyframes movingRTL {
+  from {
+    right: 100px; opacity: 0;
+  }
+  to {
+    right: 0px; opacity: 1;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .DiplomaticGreen {
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
+  .DiplomaticGreenInfo {
+    padding: 20px;
+  }
 }
 @media only screen and (max-width: 700px) {
+  .CompanyInfo {
+    padding: 20px 0;
+  }
+  .CompanyInfoImage img {
+    margin: auto;
+    width: 350px;
+    object-fit: cover;
+  }
+  .CompanyInfoDetails {
+    /* border: 1px solid #000; */
+    width: 100%;
+  }
+  .CompanyInfoDetails ul > li {
+    /* border: 1px solid #000; */
+    margin: 25px 0;
+  }
+  .CompanyInfoDetails ul {
+    /* border: 1px solid #000; */
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .mobileTextUp {
+    transform: translateY(-40px);
+  }
+  .mobileTextUp {
+    transition: all 1s ease-in-out;
+    transform: translate(0);
+  }
+
+  .EndeavourImages {
+    position: relative;
+    right: -40px;
+    /* border: 1px solid #eee; */
+  }
+  .DiplomaticGreenInfo {
+    padding: 10px;
+  }
   .DiplomaticGreen {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     width: 99%;
   }
   .DiplomaticGreen img {
-    width: 450px;
+    object-fit: cover;
+    width: 400px;
+    height: 380px;
   }
   .toprightAbout {
     top: -5px;
     transform: rotate(0deg);
   }
-
   .descriptionGreenInfo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    padding: 10px 0;
+    color: #000000;
     width: 100%;
+    margin-left: auto;
   }
+  /* .descriptionGreenInfo {
+    width: 100%;
+  } */
   .EndeavourInfoCenter {
     width: 100%;
   }
@@ -225,11 +317,11 @@ p > span {
   .greyBox {
     display: none;
   }
-  .CompanyInfoImage img {
-    margin-right: 0;
-    margin-left: 30px;
-  }
-  .Images{
+
+  /* .Images {
     justify-content: end;
+  } */
+  .CompanyInfo {
+    flex-wrap: wrap;
   }
 }
